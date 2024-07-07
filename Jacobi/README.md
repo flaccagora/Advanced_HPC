@@ -7,4 +7,4 @@ To compile the program
 # RUN
 
 To run the scaling test
-> bash jobs/run.sh `Matrix_size` `Iterations` `cpu|gpu|oneside` 
+> bash jobs/scal.sh `Matrix_size` `Iterations` `cpu|gpu|oneside` 
