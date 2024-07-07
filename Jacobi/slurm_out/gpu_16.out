@@ -1,0 +1,51 @@
+Sat Jun 29 16:04:43 CEST 2024
+############################################
+Matrix size:           80000
+Number of iterations:  10
+Number of nodes:       16
+Number of processes:   64
+Number of threads:     8
+############################################
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+Sat Jun 29 16:04:52 CEST 2024

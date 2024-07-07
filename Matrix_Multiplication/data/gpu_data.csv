@@ -1,0 +1,2 @@
+type,n_proc,n_thread,N,global,computation,communication,init,gpu_init
+2,4,8,80000,43.842330,14.890123,24.721241,0.915266,3.397084

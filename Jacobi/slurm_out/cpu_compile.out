@@ -1,0 +1,16 @@
+Sat Jul  6 15:37:27 CEST 2024
+rm cpu_run.x
+echo Compiling the CPU version
+Compiling the CPU version
+mpicc jacobi_cpu.c -o cpu_run.x -O3 -fopenmp -march=native -Wall 
+"jacobi_cpu.c", line 58: warning: variable "row_peek" was set but never used [set_but_not_used]
+    size_t dimension = 0, iterations = 0, row_peek, col_peek;
+                                          ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"jacobi_cpu.c", line 58: warning: variable "col_peek" was set but never used [set_but_not_used]
+    size_t dimension = 0, iterations = 0, row_peek, col_peek;
+                                                    ^
+
+Sat Jul  6 15:37:28 CEST 2024

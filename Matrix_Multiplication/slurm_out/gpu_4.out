@@ -1,0 +1,25 @@
+Wed Jul  3 10:16:54 CEST 2024
+############################################
+Matrix size:           80000
+Number of nodes:       4
+Number of processes:   16
+Number of threads:     8 (per process)
+Type:                  gpu
+############################################
+GPU_BLAS
+GPU_BLAS
+GPU_BLAS
+GPU_BLAS
+GPU_BLAS
+GPU_BLAS
+GPU_BLAS
+GPU_BLAS
+GPU_BLAS
+GPU_BLAS
+GPU_BLAS
+GPU_BLAS
+GPU_BLAS
+GPU_BLAS
+GPU_BLAS
+GPU_BLAS
+Wed Jul  3 10:17:21 CEST 2024

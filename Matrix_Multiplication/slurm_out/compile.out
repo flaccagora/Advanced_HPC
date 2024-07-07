@@ -1,0 +1,150 @@
+Sat Jul  6 15:18:09 CEST 2024
+rm -f obj/*.o run.x ./*.o
+mpicc -O3 -lopenblas -lcudart -lcublas -fopenmp -march=native -Wall -Minfo=all   -c -o main.o main.c
+rand_initialize:
+      5, include "cpu.c"
+           7, include "initialize.c"
+               20, Loop not vectorized/parallelized: contains call
+     20, #omp parallel
+identity_initialize_seq:
+      5, include "cpu.c"
+           7, include "initialize.c"
+               42, #omp parallel
+                   Loop not vectorized: unprofitable for target
+                   Loop unrolled 4 times
+identity_initialize:
+      5, include "cpu.c"
+           7, include "initialize.c"
+               80, #omp parallel
+                   Loop not vectorized: unprofitable for target
+                   Loop unrolled 4 times
+sequence_initialize_seq:
+      5, include "cpu.c"
+           7, include "initialize.c"
+              112, #omp parallel
+                   Generated vector simd code for the loop
+sequence_initialize:
+      5, include "cpu.c"
+           7, include "initialize.c"
+              149, #omp parallel
+                   Generated vector simd code for the loop
+sequence_initialize_old:
+      5, include "cpu.c"
+           7, include "initialize.c"
+              178, #omp parallel
+              179, Loop not vectorized: recurrence
+check_equality:
+      5, include "cpu.c"
+           8, include "utils.c"
+                9, Loop not vectorized/parallelized: potential early exits
+matrix_print:
+      5, include "cpu.c"
+           8, include "utils.c"
+               57, Loop not vectorized/parallelized: contains call
+print_loc:
+      5, include "cpu.c"
+           8, include "utils.c"
+               70, Loop not vectorized/parallelized: contains call
+distributed_print:
+     88, print_loc inlined, size=9 (inline) file main.c (65)
+          70, Loop not vectorized/parallelized: contains call
+cpu_mult:
+      5, include "cpu.c"
+          54, Loop not vectorized/parallelized: contains call
+     60, cpu_get_nrows_displs inlined, size=16 (inline) file main.c (153)
+         156, Loop not fused: different loop trip count
+              Generated vector simd code for the loop
+         160, Loop not fused: function call before adjacent loop
+              Loop not vectorized: data dependency
+              Loop unrolled 2 times
+     97, write_csv inlined, size=9 (inline) file main.c (18)
+cpu_copy_gather:
+      5, include "cpu.c"
+         119, Loop not vectorized: recurrence
+matmul:
+      5, include "cpu.c"
+         141, #omp parallel
+         144, Generated vector simd code for the loop containing reductions
+         145, FMA (fused multiply-add) instruction(s) generated
+cpu_get_nrows_displs:
+      5, include "cpu.c"
+         156, Loop not fused: different loop trip count
+              Generated vector simd code for the loop
+         160, Loop not vectorized: data dependency
+              Loop unrolled 2 times
+gpu_blas:
+      6, include "gpu.c"
+          77, Loop not vectorized/parallelized: contains call
+     83, get_nrows_displs inlined, size=16 (inline) file main.c (152)
+         155, Loop not fused: different loop trip count
+              Generated vector simd code for the loop
+         159, Loop not fused: function call before adjacent loop
+              Loop not vectorized: data dependency
+              Loop unrolled 2 times
+    123, write_csv inlined, size=9 (inline) file main.c (18)
+copy_gather:
+      6, include "gpu.c"
+         144, Recognized memory copy idiom
+get_nrows_displs:
+      6, include "gpu.c"
+         155, Loop not fused: different loop trip count
+              Generated vector simd code for the loop
+         159, Loop not vectorized: data dependency
+              Loop unrolled 2 times
+testrun:
+      7, include "testrun.c"
+          78, Loop not vectorized/parallelized: contains call
+         100, #omp parallel
+             101, Begin single region
+                  End single region
+             106, Begin single region
+             112, End single region
+                  Barrier
+         112, Begin task
+              End task
+     88, test_get_nrows_displs inlined, size=16 (inline) file main.c (182)
+         185, Loop not fused: different loop trip count
+              Generated vector simd code for the loop
+         189, Loop not fused: function call before adjacent loop
+              Loop not vectorized: data dependency
+              Loop unrolled 2 times
+    111, test_get_nrows_displs inlined, size=16 (inline) file main.c (182)
+         185, Generated vector simd code for the loop
+         189, Loop not vectorized: data dependency
+              Loop unrolled 2 times
+    153, write_csv inlined, size=9 (inline) file main.c (18)
+test_copy_gather:
+      7, include "testrun.c"
+         174, Recognized memory copy idiom
+test_get_nrows_displs:
+      7, include "testrun.c"
+         185, Loop not fused: different loop trip count
+              Generated vector simd code for the loop
+         189, Loop not vectorized: data dependency
+              Loop unrolled 2 times
+main:
+     32, Loop not vectorized/parallelized: contains call
+     79, cpu_mult inlined, size=99 (inline) file main.c (24)
+          54, Loop not vectorized/parallelized: contains call
+          60, Loop not fused: different loop trip count
+              Loop not fused: function call before adjacent loop
+              Generated vector simd code for the loop
+              Loop not vectorized: data dependency
+              Loop unrolled 2 times
+     82, cpu_mult inlined, size=99 (inline) file main.c (24)
+          54, Loop not vectorized/parallelized: contains call
+          60, Loop not fused: different loop trip count
+              Loop not fused: function call before adjacent loop
+              Generated vector simd code for the loop
+              Loop not vectorized: data dependency
+              Loop unrolled 2 times
+     88, gpu_blas inlined, size=111 (inline) file main.c (26)
+          77, Loop not vectorized/parallelized: contains call
+          83, get_nrows_displs inlined, size=16 (inline) file main.c (152)
+          83, Loop not fused: different loop trip count
+              Loop not fused: function call before adjacent loop
+              Generated vector simd code for the loop
+              Loop not vectorized: data dependency
+              Loop unrolled 2 times
+mpicc -O3 -lopenblas -lcudart -lcublas -fopenmp -march=native -Wall -Minfo=all main.o -o run.x
+Sat Jul  6 15:18:11 CEST 2024

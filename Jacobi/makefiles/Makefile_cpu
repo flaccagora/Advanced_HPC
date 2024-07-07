@@ -1,0 +1,15 @@
+# Compiler
+CC := mpicc
+
+# Compiler flags
+CFLAGS := -O3 -fopenmp -march=native -Wall 
+
+
+# Link object files into the target executable
+cpu_run.x: jacobi_cpu.c
+	echo Compiling the CPU version
+	$(CC) $^ -o $@ $(CFLAGS)
+
+# Clean up object files and the target executable
+clean:
+	rm cpu_run.x

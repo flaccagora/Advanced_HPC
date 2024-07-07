@@ -1,0 +1,38 @@
+Wed Jun 26 08:29:49 CEST 2024
+############################################
+Matrix size:           80000
+Number of iterations:  10
+Number of nodes:       4
+Number of processes:   16
+Number of threads:     8
+############################################
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+mca_fbtl_posix_pwritev: error in (p)write(v):Invalid argument
+Wed Jun 26 08:30:01 CEST 2024

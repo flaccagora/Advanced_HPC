@@ -1,0 +1,16 @@
+Sun Jul  7 11:22:09 CEST 2024
+rm oneside_run.x
+echo Compiling the ONESIDE version
+Compiling the ONESIDE version
+mpicc jacobi_oneside.c -o oneside_run.x -O3 -fopenmp -march=native -Wall 
+"jacobi_oneside.c", line 60: warning: variable "row_peek" was set but never used [set_but_not_used]
+    size_t dimension = 0, iterations = 0, row_peek, col_peek;
+                                          ^
+
+Remark: individual warnings can be suppressed with "--diag_suppress <warning-name>"
+
+"jacobi_oneside.c", line 60: warning: variable "col_peek" was set but never used [set_but_not_used]
+    size_t dimension = 0, iterations = 0, row_peek, col_peek;
+                                                    ^
+
+Sun Jul  7 11:22:13 CEST 2024

@@ -1,0 +1,12 @@
+Sat Jul  6 15:19:24 CEST 2024
+############################################
+Matrix size:           10000
+Number of nodes:       2
+Number of processes:   2
+Number of threads:     112
+Type:                  cpu
+Matmul or BLAS:        1
+############################################
+CPU_BLAS
+CPU_BLAS
+Sat Jul  6 15:19:28 CEST 2024

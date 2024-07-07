@@ -1,0 +1,14 @@
+# Compiler
+CC := mpicc
+
+# Compiler flags
+CFLAGS := -O3 -lcudart -lcublas -fopenmp -march=native -Wall -Minfo=all -acc
+
+# Link object files into the target executable
+gpu_run.x: jacobi_gpu.c
+	echo Compiling the GPU version
+	$(CC) $^ -o $@ $(CFLAGS)
+
+# Clean up object files and the target executable
+clean:
+	rm gpu_run.x
