@@ -7,12 +7,15 @@ The following is a comparison of the performance of distributed matrix multiplic
 
 Matrices are always initialized on CPU on purpose.
 
-## Scaling
-Scaling is performed on leonardo (Cineca) cluster on CPU only and GPU nodes. 
-\
-Matrix size
-- 1000x1000
-- 2000x2000
-- 3000x3000
-## Run the code
+# Compile 
+To compile the program
+> bash jobs/compile.sh
+
+
+# RUN
+
+To run the scaling test
+> bash jobs/scal.sh `Matrix_size` `cpu|gpu`
+
+if `cpu` than set additional argument `0|1` to specify **Naive** or **Cblas** implementation. 
 
