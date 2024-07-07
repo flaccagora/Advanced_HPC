@@ -47,7 +47,7 @@ int main(int argc, char* argv[]){
     {
         printf("Sorry, the MPI library does not provide "
                "this threading level! Aborting!\n");
-        MPI_Abort(comm, 1);
+        MPI_Abort(MPI_COMM_WORLD, 1);
     }
     
   int rank, size;
