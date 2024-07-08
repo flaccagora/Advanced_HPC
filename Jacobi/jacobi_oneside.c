@@ -103,7 +103,6 @@ int main(int argc, char* argv[]){
   MPI_Info info;
   MPI_Info_create(&info);
   MPI_Info_set(info, "same_size", "true");
-  MPI_Info_set(info, "async_progress", "true");
 
   double t_window_max=0;
 
